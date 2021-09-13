@@ -42,6 +42,12 @@ static void print_status_narrow(void) {
         case 1:
             oled_write_ln_P(PSTR("Mod"), false);
             break;
+        case 2:
+            oled_write_ln_p(PSTR("Util"), false);
+            break;
+        case 3:
+            oled_write_ln_p(PSTR("Game"), false);
+            break;
         default:
             oled_write_ln_P(PSTR("Undef"), false);
     }

@@ -28,9 +28,9 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
         }
     } else if (index == 1) {
         if (clockwise) {
-            rgblight_decrease_val();
+            tap_code16(LCTL(KC_RIGHT));
         } else {
-            rgblight_increase_val();
+            tap_code16(LCTL(KC_LEFT));
         }
     }
 
